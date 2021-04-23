@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import os
-from keep_alive import keep_alive
+
 
 client = discord.Client()
 
@@ -20,5 +20,4 @@ async def on_message(message):
         await message.add_reaction("\U00002b07")
     
 
-keep_alive()
 client.run(os.getenv("TOKEN")) 
